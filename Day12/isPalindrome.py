@@ -12,3 +12,4 @@ class Solution:
             temp = temp//10
         return res==x
         
+        
