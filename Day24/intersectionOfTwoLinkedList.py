@@ -12,7 +12,7 @@ class Solution:
             count+=1
             curr = curr.next
         return count
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(self, headA, headB):
         size1 = self.findLength(headA)
         size2 = self.findLength(headB)
         diff = abs(size1-size2)
