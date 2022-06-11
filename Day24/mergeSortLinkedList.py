@@ -37,9 +37,9 @@ class Solution:
             return head
         mid = self.findMid(head)
     
-        leftPart = self.mergeSort(head)
-        rightPart = self.mergeSort(mid)
+        left = self.mergeSort(head)
+        right = self.mergeSort(mid)
         
         
-        combine = self.merge(leftPart,rightPart)
+        combine = self.merge(left,right)
         return combine

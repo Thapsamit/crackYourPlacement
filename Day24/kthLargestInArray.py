@@ -1,6 +1,6 @@
 import heapq
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
+    def findKthLargest(self, nums, k):
         ans = []
         heapq.heapify(ans)
         for i in range(0,k,1):
