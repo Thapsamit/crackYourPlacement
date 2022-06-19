@@ -1,5 +1,5 @@
 class Solution:
-    def findLength(self, nums1: List[int], nums2: List[int]) -> int:
+    def findLength(self, nums1, nums2):
         n = len(nums1)
         m = len(nums2)
         dp = [[0 for i in range(m+1)]for j in range(n+1)]
