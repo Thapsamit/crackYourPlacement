@@ -1,6 +1,6 @@
 class NumMatrix:
 
-    def __init__(self, matrix: List[List[int]]):
+    def __init__(self, matrix):
         Rows = len(matrix)
         Cols = len(matrix[0])
         self.sumMat = [[0 for i in range(Cols+1)] for j in range(Rows+1)]
@@ -10,7 +10,7 @@ class NumMatrix:
                 prefix+=matrix[r][c]
                 above = self.sumMat[r][c+1]
                 self.sumMat[r+1][c+1] = prefix+above
-    def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:
+    def sumRegion(self, row1, col1, row2, col2):
         
         # plus one because in sumMat we have one more row and one column
         row1 = row1+1

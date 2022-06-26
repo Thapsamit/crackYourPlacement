@@ -1,6 +1,6 @@
 import heapq
 class Solution:
-    def furthestBuilding(self, heights: List[int], bricks: int, ladders: int) -> int:
+    def furthestBuilding(self, heights, bricks, ladders):
         arr = []
         heapq.heapify(arr)
         for i in range(0,len(heights)-1,1):
